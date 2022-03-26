@@ -35,7 +35,7 @@ namespace Лабораторная_работа__2.Вариант_6
             double z = double.Parse(textBox3.Text);
             textBox4.Text += Environment.NewLine + "Z=" + z.ToString();
 
-            double b = Math.Sqrt(10 * (Math.Pow(x, 1.3) + Math.Pow(x, y + 2))) * (Math.Pow(Math.Asin(z), 2) - Math.Abs(x - y));
+            double b = Math.Sqrt(10 * (Math.Pow(x, 1.0/3) + Math.Pow(x, y + 2))) * (Math.Pow(Math.Asin(z), 2) - Math.Abs(x - y));
             textBox4.Text += Environment.NewLine + "Результат B=" + b.ToString();
         }
     }
